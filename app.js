@@ -12,7 +12,9 @@ function myFunction() {
 let price = 100;
 let VAT = 0.25;
 let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
 document.getElementById("demo2").innerHTML = total;
+
 // 3
 const numbers = [45, 20, 229, 35, 25];
 let allOver18 = numbers.every(myFunction);
@@ -20,16 +22,20 @@ document.getElementById("demo3").innerHTML = "All over 18 is " + allOver18;
 function myFunction(value, index, array) {
     return value > 18;
 }
+
 // 4
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo4").innerHTML = fruits.includes("Mango");
+
 // 5
 const d = new Date(2018, 11, 24, 10, 33, 30, 0);
 document.getElementById("demo5").innerHTML = d;
+
 // 6
 const d1 = new Date();
 d1.setDate(16);
 document.getElementById("demo6").innerHTML = d1;
+
 // 7
 let text;
 const today = new Date();
@@ -41,18 +47,21 @@ if (someday > today) {
     text = "Today is after January 14, 2100.";
 }
 document.getElementById("demo7").innerHTML = text;
+
 // 8. 
 document.getElementById("demo8").innerHTML = Math.trunc(12.67);
+
 // 9
 function random() {
     document.getElementById("demo9").innerHTML = Math.random().toFixed(2) * 100;
 }
 // 10
 function myFunction() {
-    let age = document.getElementById("age").value;
+    // let age = document.getElementById("age").value;
     let voteable = (age < 18) ? "Too young" : "Old enough";
     document.getElementById("demo10").innerHTML = voteable + " to vote.";
 }
+
 // 11
 let day;
 switch (new Date().getDay()) {
@@ -78,6 +87,7 @@ switch (new Date().getDay()) {
         day = "Saturday";
 }
 document.getElementById("demo11").innerHTML = "Today is " + day;
+
 // 12
 const person = { fname: "John", lname: "Doe", age: 25, country: "USA" };
 let txt = "";
@@ -85,7 +95,12 @@ for (let x in person) {
     txt += person[x] + " ";
 }
 document.getElementById("demo12").innerHTML = txt;
+
 // 13
-
-
+const cars = ['bmw', 'marcedes', 'toyota'];
+const brand = 'toyota';
+let product = '';
+for (let item of cars) {
+    product = product + item + ' ';
+}
 
