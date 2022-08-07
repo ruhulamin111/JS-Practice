@@ -111,4 +111,21 @@ for (let i = 0; i < 5; i++) {
 }
 document.getElementById("demo13").innerHTML = text1;
 
+// 14
+function myFunction() {
+    const message = document.getElementById("p01");
+    message.innerHTML = "";
+    let x = document.getElementById("demo14").value;
+    try {
+        if (x == "") throw "empty";
+        if (isNaN(x)) throw "not a number";
+        x = Number(x);
+        if (x < 5) throw "too low";
+        if (x > 10) throw "too high";
+    }
+    catch (err) {
+        message.innerHTML = "Input is " + err;
+    }
+}
+
 
