@@ -24,3 +24,19 @@ document.getElementById("demo3").innerHTML = "All over 18 is " + allOver18;
 function myFunction(value, index, array) {
     return value > 18;
 }
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo4").innerHTML = fruits.includes("Mango");
+
+
+
+const d = new Date(2018, 11, 24, 10, 33, 30, 0);
+document.getElementById("demo5").innerHTML = d;
+
+
+
+
+
+
+
