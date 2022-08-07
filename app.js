@@ -29,9 +29,23 @@ document.getElementById("demo5").innerHTML = d;
 const d1 = new Date();
 d1.setDate(16);
 document.getElementById("demo6").innerHTML = d1;
-
-
-
+// 7
+let text;
+const today = new Date();
+const someday = new Date();
+someday.setFullYear(2100, 0, 14);
+if (someday > today) {
+    text = "Today is before January 14, 2100.";
+} else {
+    text = "Today is after January 14, 2100.";
+}
+document.getElementById("demo7").innerHTML = text;
+// 8. 
+document.getElementById("demo8").innerHTML = Math.trunc(12.67);
+// 9
+function random() {
+    document.getElementById("demo9").innerHTML = Math.random().toFixed(2) * 100;
+}
 
 
 
