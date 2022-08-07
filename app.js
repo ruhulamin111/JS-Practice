@@ -1,39 +1,34 @@
-// 1.
+// 1
 function changeHtml() {
     document.getElementById('demo').innerHTML = "Hellow world"
 };
-
 function myFunction() {
     let text = document.getElementById("demo1").innerHTML;
     document.getElementById("demo1").innerHTML =
         text.replace("Microsoft", "W3Schools");
 }
-
+// 2
 let price = 100;
 let VAT = 0.25;
 let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
-
-
 document.getElementById("demo2").innerHTML = total;
-
+// 3
 const numbers = [45, 20, 229, 35, 25];
 let allOver18 = numbers.every(myFunction);
-
 document.getElementById("demo3").innerHTML = "All over 18 is " + allOver18;
-
 function myFunction(value, index, array) {
     return value > 18;
 }
-
-
+// 4
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo4").innerHTML = fruits.includes("Mango");
-
-
-
+// 5
 const d = new Date(2018, 11, 24, 10, 33, 30, 0);
 document.getElementById("demo5").innerHTML = d;
-
+// 6
+const d1 = new Date();
+d1.setDate(16);
+document.getElementById("demo6").innerHTML = d1;
 
 
 
