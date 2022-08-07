@@ -103,4 +103,12 @@ let product = '';
 for (let item of cars) {
     product = product + item + ' ';
 }
+// 14
+let text1 = "";
+for (let i = 0; i < 5; i++) {
+    if (i === 2) { continue; }
+    text1 = text1 + i;
+}
+document.getElementById("demo13").innerHTML = text1;
+
 
