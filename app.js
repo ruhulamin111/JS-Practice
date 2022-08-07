@@ -78,7 +78,14 @@ switch (new Date().getDay()) {
         day = "Saturday";
 }
 document.getElementById("demo11").innerHTML = "Today is " + day;
-
+// 12
+const person = { fname: "John", lname: "Doe", age: 25, country: "USA" };
+let txt = "";
+for (let x in person) {
+    txt += person[x] + " ";
+}
+document.getElementById("demo12").innerHTML = txt;
+// 13
 
 
 
